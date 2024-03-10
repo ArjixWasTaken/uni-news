@@ -1,8 +1,8 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Response
+from .feeds import get_cs_feed
 
 app = FastAPI()
 
-
-@app.get("/")
-def hello_world():
-    return {"message": "OK"}
+@app.get("/uni/news-and-announcements")
+def news_and_announcements() -> Response:
+    return Response(content=get_cs_feed(), media_type="application/rss+xml")
