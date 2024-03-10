@@ -5,7 +5,7 @@ services:
       target: builder
     container_name: uni-news
     environment:
-      PORT: 8000
-    ports:
-      - '8000:8000'
+      PORT: 8080
+    expose:
+      - '8080'
     restart: unless-stopped
