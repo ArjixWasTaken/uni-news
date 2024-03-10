@@ -31,7 +31,7 @@ def get_cs_feed():
 
 <channel>
 <title>cs.unipi.gr - News and Announcements</title>
-<link>https://feed.arjix.dev/uni/news-and-announcements</link>
+<link>https://feeds.arjix.dev/uni/news-and-announcements</link>
 <description>Made by https://github.com/ArjixWasTaken</description>
 {items}
 </channel>
